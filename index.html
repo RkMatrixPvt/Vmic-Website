@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="images/logo/vmiclogo.png" />
+  <title>Vidya Mandir Inter College, Baberu</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="brand">
+        <img src="images/logo/vmiclogo.png" alt="School Logo" class="logo-img" />
+        VIDYA MANDIR INTER COLLEGE
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#admission">Admission</a></li>
+          <li><a href="#vision">Vision & Mission</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="home" class="section-wrapper">
+    <div class="slider-section">
+      <div class="slider">
+        <div class="slides" id="slideContainer">
+          <img src="images/slides/Screenshot%202025-07-09%20230931.png" alt="Slide 1" class="slide">
+          <img src="images/slides/AdminssionPic.jpg" alt="Slide 2" class="slide">
+          <img src="images/slides/Vmicground.jpg" alt="Slide 3" class="slide">
+          <img src="images/slides/lovepik-school-background-picture_400436923.jpg" alt="Slide 4" class="slide">
+          <img src="images/slides/Copilot_20250709_234736.png" alt="Slide 5" class="slide">    
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div style="text-align:center; padding-top: 10px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other sections remain the same -->
+  <!-- About Section -->
+  <div id="about" class="section-wrapper">
+    <div class="section-card section">
+      <h2><i class="fas fa-info-circle"></i>  About Us</h2>
+      <p>At Vidya Mandir Inter College, we believe education should prepare students for life—not just exams. That’s why we focus on both academic excellence and personal development.</p>
+      <p>Our curriculum encourages learning, teamwork, creativity, and physical fitness. Through our sports programs and creative activities like animation and visual arts, students grow in confidence and imagination.</p>
+      <p>Most importantly, we help each child become a kind, responsible, and capable individual. We are proud to support every student’s journey and future.</p>
+    </div>
+  </div>
+
+  <!-- Academics -->
+  <div id="academics" class="section-wrapper">
+    <div class="section-card section">
+      <h2><i class="fas fa-book"></i>  Academics</h2>
+      <p>Vidya Mandir Inter College offers a well-rounded academic environment where students thrive across grades 6 to 12. Our intermediate programs span Humanities, Science, Commerce, Agriculture, and Vocational Studies—all delivered in Hindi by experienced faculty members dedicated to personalized learning.</p>
+      <p>The college features well-equipped science labs, a modern computer lab, a library with 300+ books, and a playground to support physical education. Students benefit from smart classroom initiatives and regular assessments designed to ensure exam readiness and academic excellence.</p>
+      <p>With over a 75% pass rate and a 100% board exam success in 2021, Vidya Mandir Inter College is a proud platform for students to dream big and rise higher.</p>
+    </div>
+  </div>
+
+  <!-- Admission Section -->
+ <div id="admission" class="section-wrapper">
+  <div class="section-card section">
+    <h2>Admission</h2>
+
+    <!-- 📢 Dynamic Financial Year Notice -->
+    <div id="admission-year" style="text-align: center; font-size: 1.2rem; font-weight: bold; color: #8B0000; margin-bottom: 20px;">
+      <!-- JavaScript will insert the year text here -->
+    </div>
+
+    <p><strong>Eligibility:</strong></p>
+    <ul>
+      <li>Nursery: 3 years</li>
+      <li>LKG: 4 years</li>
+      <li>UKG: 5 years</li>
+      <li>Class 6: 11 years</li>
+      <li>Class 9: 14 years</li>
+      <li>Class 11: 16 years with minimum 75% in High School</li>
+    </ul>
+
+    <p><strong>Entrance Exam:</strong> Required for Classes 6, 9, and 11. Subjects include Hindi, English, Science, GK, and Math.</p>
+
+    <p><strong>Documents Required:</strong></p>
+    <ul>
+      <li>Original Transfer Certificate</li>
+      <li>Marksheet (especially for Class 11)</li>
+      <li>Age proof and other relevant documents</li>
+    </ul>
+
+    <p><strong>Selection Process:</strong> Based on entrance exam and interview (if required). Final decision rests with the Principal.</p>
+
+    <p><strong>Admission Form:</strong> You can <a href="#" target="_blank">download the form from our website</a></p>
+  </div>
+</div>
+
+  <!-- Vision & Mission -->
+  <section id="vision" class="section-wrapper">
+    <div class="section-card section">
+      <h2><i class="fas fa-lightbulb"></i> Vision & Mission</h2>
+      <p>Our vision at Vidya Mandir Inter College is to nurture responsible, informed, and compassionate individuals who will contribute positively to society. We envision a learning environment that empowers students with critical thinking, creativity, and a strong moral compass.</p>
+      <p>Our mission is to provide a holistic education that balances academics, values, physical fitness, and co-curricular activities. We aim to instill in our students a lifelong passion for learning and a deep respect for culture, diversity, and community.</p>
+      <div class="profile-tab">
+        <div class="profile-card">
+          <img src="images/CornorDesk/Vishweshwar.png" alt="Director Photo">
+          <h3>Mr. Vishweshwar Pandey</h3>
+          <p><strong>Founder/Manager</strong><br>"Our mission is to empower students to lead with knowledge and compassion. We believe in nurturing young minds through holistic education                 and strong moral values."</p>
+        </div>
+
+        <div class="profile-card">
+          <img src="images/CornorDesk/Saurabh.png" alt="Director Photo">
+          <h3>Er. Saurabh Chandr Pandey</h3>
+          <p><strong>Director</strong><br>"We are dedicated to creating an environment where students are inspired to think critically, act responsibly, and lead confidently. Quality education is the foundation of a progressive society."</p>
+        </div>
+
+        <div class="profile-card">
+          <img src="images/CornorDesk/Principal.png" alt="Principal Photo">
+          <h3>Mrs. Anil Dwivedi</h3>
+          <p><strong>Principal</strong><br>"Excellence in education comes from dedication, values, and consistent effort. At Vidya Mandir Inter College, we strive to develop well-rounded individuals prepared for the future."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact -->
+<div id="contact" class="section-wrapper">
+  <div class="section-card section">
+    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
+      
+      <!-- Contact Details -->
+      <div style="flex: 1 1 300px;">
+        <p><i class="fas fa-envelope" style="color: #00bcd4; margin-right: 10px;"></i><strong>Email:</strong> vmicbaberu@gmail.com</p>
+        <p><i class="fas fa-phone" style="color: #4caf50; margin-right: 10px;"></i><strong>Phone:</strong> +91 73091 66819</p>
+        <p><i class="fas fa-map-marker-alt" style="color: #e91e63; margin-right: 10px;"></i><strong>Location:</strong>
+          Vidya Mandir Inter College, Atarra Road,<br>
+          Baberu, Uttar Pradesh 210121, India
+        </p>
+      </div>
+
+      <!-- Google Map -->
+      <div style="flex: 1 1 500px;">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230640.28566762162!2d80.46975591767713!3d25.413028319413854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399caf6eb0a67a05%3A0x79e7987fd3d94f4e!2sVIDYA%20MANDIR%2C%20INTER%20COLLEGE!5e0!3m2!1sen!2sin!4v1752129600528!5m2!1sen!2sin" 
+
+
+width="100%" height="300"
+          style="border: 0; border-radius: 8px;"
+          allowfullscreen="" loading="lazy">
+
+</iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+ 
+  <footer>
+    <p>&copy; 2025 Vidya Mandir Inter College. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle menu for mobile
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('show');
+    }
+
+    // Slider logic (unchanged)
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const slideContainer = document.getElementById('slideContainer');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+      slideContainer.style.transform = `translateX(-${slideIndex * (100 / totalSlides)}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      if (dots[slideIndex]) dots[slideIndex].classList.add('active');
+    }
+
+    function plusSlides(n) {
+      slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+      updateSlider();
+    }
+
+    function currentSlide(n) {
+      slideIndex = n - 1;
+      updateSlider();
+    }
+
+    slideContainer.style.width = `${totalSlides * 100}%`;
+    slides.forEach(slide => {
+      slide.style.width = `${100 / totalSlides}%`;
+    });
+
+    updateSlider();
+
+    // Navbar link highlight
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Admission year
+    function getFinancialYearText() {
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = today.getMonth() + 1;
+      const fyStart = month >= 4 ? year : year - 1;
+      const fyEnd = fyStart + 1;
+      return `Admission Open for Financial Year ${fyStart}-${fyEnd.toString().slice(-2)}`;
+    }
+
+    const admissionYearEl = document.getElementById("admission-year");
+    if (admissionYearEl) {
+      admissionYearEl.innerText = getFinancialYearText();
+    }
+  </script>
+</body>
+</html>

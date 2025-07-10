@@ -1,0 +1,273 @@
+:root {
+  --primary-color: #8B0000;
+  --secondary-color: #B22222;
+  --light-bg: #f8f9fa;
+  --text-color: #333;
+  --card-bg: #fff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+}
+
+/* ===== Header & Navigation ===== */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: border-bottom 0.3s;
+}
+
+nav a.active {
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+}
+
+/* ===== Hamburger Menu Toggle ===== */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* ===== Section Wrapper & Card ===== */
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px 40px;
+  scroll-margin-top: 100px;
+}
+
+.section-card {
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.section p,
+.section ul {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+/* ===== Slider Section ===== */
+.slider-section {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 6;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  background-color: white;
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ===== Slider Controls ===== */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* ===== Profile Cards ===== */
+.profile-tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profile-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  text-align: center;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile-card h3 {
+  margin: 0.5rem 0 0.25rem;
+  color: var(--primary-color);
+}
+
+.profile-card p {
+  font-size: 0.95rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slider-section {
+    aspect-ratio: 4 / 3;
+  }
+
+  .section p,
+  .section ul {
+    text-align: left;
+  }
+}
