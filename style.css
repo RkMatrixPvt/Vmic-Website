@@ -1042,7 +1042,7 @@ section#contact {
     }
 
 /* Mobile & Tablet View */
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
     .menu-toggle {
         display: block;
         color: #fbc02d;
