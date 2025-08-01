@@ -1,462 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/png" href="images/logo/vmiclogo.png" />
-  <title>Vidya Mandir Inter College, Baberu</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidya Mandir Inter College, Baberu – Academic Excellence with Character</title>
+    <meta name="description" content="Vidya Mandir Inter College Baberu empowers students through academic excellence, creative growth, and strong values. Discover a school that nurtures both minds and character." />
+    <meta name="keywords" content="Vidya Mandir, Inter College Baberu, Baberu Banda School, Indian Education, CBSE School, Character Building, Student Development" />
+    <meta name="author" content="Vidya Mandir Inter College" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="images/logo/vmiclogo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="nav-container">
-      <div class="brand">
-        <img src="images/logo/vmiclogo.png" alt="School Logo" class="logo-img" />
-        VIDYA MANDIR INTER COLLEGE
-      </div>
-      <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-      <nav>
-        <ul id="navMenu">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#academics">Academics</a></li>
-          <li><a href="#admission">Admission</a></li>
-          <li><a href="#vision">Vision & Mission</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-<!-- Marquee will be inserted here by JS -->
-<div id="marqueeContainer"></div> 
-<div id="home" class="section-wrapper">
-    <div class="slider-section">
-      <div class="slider">
-        <div class="slides" id="slideContainer">
-          <img src="images/slides/3.jpg" alt="Slide 1" class="slide">
-          <img src="images/slides/2.jpg" alt="Slide 2" class="slide">
-          <img src="images/slides/1.jpg" alt="Slide 3" class="slide">      
+    <!-- Top Toolbar -->
+    <div class="top-toolbar">
+        <div class="toolbar-left">
+            📞 +91 7309 166819
         </div>
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-      </div>
-      <div style="text-align:center; padding-top: 10px;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Other sections remain the same -->
-  <!-- About Section -->
-  <div id="about" class="section-wrapper">
-    <div class="section-card section">
-      <h2><i class="fas fa-info-circle"></i>  About Us</h2>
-      <p>At Vidya Mandir Inter College Baberu, we believe education should prepare students for life—not just exams. That’s why we focus on both academic excellence and personal development.</p>
-      <p>Our curriculum encourages learning, teamwork, creativity, and physical fitness. Through our sports programs and creative activities like animation and visual arts, students grow in confidence and imagination.</p>
-      <p>Most importantly, we help each child become a kind, responsible, and capable individual. We are proud to support every student’s journey and future.</p>
-    </div>
-  </div>
-
-<!-- Events Section -->
-<div class="section-wrapper" id="events">
-  <div class="section-card section">
-    <h2><i class="fas fa-book"></i> Events</h2>
-
-    <!-- Science Exhibition -->
-    <div class="event-block">
-      <button class="toggle-btn active" onclick="toggleEvent(this)">Science Exhibition</button>
-      <div class="event-content" style="display: block;">
-        <div class="event-row">
-          <div class="event-description">
-            <p>The Science Exhibition helps students become more creative and curious. In this activity, students make models, do experiments, and explain science in fun and interesting ways.</p>
-            <p>This activity builds confidence, helps students work in a team, and solve real-life problems. Parents can see their child’s creativity during the exhibition.</p>
-          </div>
-
-          <div class="event-img">
-            <img id="scienceSlide" src="images/scienceExhibition/1.jpeg" alt="Science Exhibition">
-          </div>
-                 
+        <div class="toolbar-right">
+            <a href="https://www.facebook.com/vidhyamandir.baberu" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
         </div>
-      </div>
     </div>
 
-    <!-- Rangoli -->
-    <div class="event-block">
-      <button class="toggle-btn" onclick="toggleEvent(this)">Rangoli Competition</button>
-      <div class="event-content">
-        <div class="event-row">
-          <div class="event-description">
-            <p>The Rangoli Competition encourages students to express their creativity through colors and patterns. In this activity, students create traditional designs using colored powders and natural materials.</p>
- <p>This activity promotes cultural awareness, teamwork, and artistic skills. Parents can see their child’s creativity and appreciation for Indian traditions during the event.</p>
-
-          </div>
-          <div class="event-img">
-            <img  id="rangoliSlide" src="images/rangoli/1.jpeg" alt="Rangoli">
-          </div>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="images/logo/vmiclogo.png" alt="College Logo">
+            <h1>Vidya Mandir Inter College, Baberu</h1>
         </div>
-      </div>
-    </div>
-
-
-<!-- Skill Development -->
-    <div class="event-block">
-      <button class="toggle-btn" onclick="toggleEvent(this)">Skill Development </button>
-      <div class="event-content">
-        <div class="event-row">
-          <div class="event-description">
-            <p>Skill Development helps students discover their strengths and build important abilities for their future. Through this program, students learn practical skills that support their career goals and boost their confidence.</p>
- <p>It also gives them clarity about their interests and talents, helping them make better decisions for higher studies and career planning.</p>
-
-          </div>
-          <div class="event-img">
-            <img id="skillDevelopmentSlide" src="images/skillDevelopment/1.jpeg" alt="Skill Development">
-          </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
         </div>
-      </div>
-    </div>
+        <nav class="nav-links light-mode">
+            <a href="#home" class="active-link">Home</a>
+            <a href="#about">About</a>
+            <a href="#vision">Vision & Mission</a>
+            <a href="#academics">Academics</a>
+            <a href="#admission">Admission</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
 
-  </div>
-</div>
 
+    <section id="home" class="hero">
+        <img src="images/logo/vmiclogo.png" alt="College Logo">
+        <h1>Vidya Mandir Inter College, Baberu</h1>
+        <p>Your Education is Our Motto</p>
+    </section>
 
-
-
-  <!-- Academics -->
-  <div id="academics" class="section-wrapper">
-    <div class="section-card section">
-      <h2><i class="fas fa-book"></i>  Academics</h2>
-      <p>Vidya Mandir Inter College offers a well-rounded academic environment where students thrive across grades 6 to 12. Our intermediate programs span Humanities, Science, Commerce, Agriculture, and Vocational Studies—all delivered in Hindi by experienced faculty members dedicated to personalized learning.</p>
-      <p>The college features well-equipped science labs, a modern computer lab, a library with 300+ books, and a playground to support physical education. Students benefit from smart classroom initiatives and regular assessments designed to ensure exam readiness and academic excellence.</p>
-      <p>With over a 75% pass rate and a 100% board exam success in 2021, Vidya Mandir Inter College is a proud platform for students to dream big and rise higher.</p>
-    </div>
-  </div>
-
-  <!-- Admission Section -->
- <div id="admission" class="section-wrapper">
-  <div class="section-card section">
-    <h2>Admission</h2>
-
-    <!-- 📢 Dynamic Financial Year Notice -->
-    <div id="admission-year" style="text-align: center; font-size: 1.2rem; font-weight: bold; color: #8B0000; margin-bottom: 20px;">
-      <!-- JavaScript will insert the year text here -->
-    </div>
-
-    <p><strong>Eligibility:</strong></p>
-    <ul>
-      <li>Nursery: 3 years</li>
-      <li>LKG: 4 years</li>
-      <li>UKG: 5 years</li>
-      <li>Class 6: 11 years</li>
-      <li>Class 9: 14 years</li>
-      <li>Class 11: 16 years with minimum 75% in High School</li>
-    </ul>
-
-    <p><strong>Entrance Exam:</strong> Required for Classes 6, 9, and 11. Subjects include Hindi, English, Science, GK, and Math.</p>
-
-    <p><strong>Documents Required:</strong></p>
-    <ul>
-      <li>Original Transfer Certificate</li>
-      <li>Marksheet (Specially for Class 11)</li>
-      <li>Age proof and other relevant documents</li>
-    </ul>
-
-    <p><strong>Selection Process:</strong> Based on entrance exam and interview (if required). Final decision rests with the Principal.</p>
-
-    <p><strong>Admission Form:</strong> You can <a href="#" target="_blank">download the form from our website</a></p>
-  </div>
-</div>
-
-  <!-- Vision & Mission -->
-  <section id="vision" class="section-wrapper">
-    <div class="section-card section">
-      <h2><i class="fas fa-lightbulb"></i> Vision & Mission</h2>
-      <p>Our vision at Vidya Mandir Inter College is to nurture responsible, informed, and compassionate individuals who will contribute positively to society. We envision a learning environment that empowers students with critical thinking, creativity, and a strong moral compass.</p>
-      <p>Our mission is to provide a holistic education that balances academics, values, physical fitness, and co-curricular activities. We aim to instill in our students a lifelong passion for learning and a deep respect for culture, diversity, and community.</p>
-      <div class="profile-tab">
-        <div class="profile-card">
-          <img src="images/CornorDesk/Vishweshwar.png" alt="Director Photo">
-          <h3>Mr. Vishweshwar Pandey</h3>
-          <p><strong>Founder/Manager</strong><br>"Our mission is to empower students to lead with knowledge and compassion. We believe in nurturing young minds through holistic education                 and strong moral values."</p>
+    <div class="value-cards">
+        <div class="value-card excellence">
+            <i class="fas fa-hourglass-half icon"></i>
+            <h2>⏳ 24+ Years</h2>
+            <p>Of Excellence</p>
         </div>
 
-        <div class="profile-card">
-          <img src="images/CornorDesk/Saurabh.png" alt="Director Photo">
-          <h3>Er. Saurabh Chandr Pandey</h3>
-          <p><strong>Director</strong><br>"We are dedicated to creating an environment where students are inspired to think critically, act responsibly, and lead confidently. Quality education is the foundation of a progressive society."</p>
+        <div class="value-card teachers">
+            <i class="fas fa-chalkboard-teacher icon"></i>
+            <h2>👨‍🏫 25+</h2>
+            <p>Teachers</p>
         </div>
 
-        <div class="profile-card">
-          <img src="images/CornorDesk/Principal.png" alt="Principal Photo">
-          <h3>Mrs. Anil Dwivedi</h3>
-          <p><strong>Principal</strong><br>"Excellence in education comes from dedication, values, and consistent effort. At Vidya Mandir Inter College, we strive to develop well-rounded individuals prepared for the future."</p>
+        <div class="value-card students">
+            <i class="fas fa-users icon"></i>
+            <h2>🎓 800+</h2>
+            <p>Students/Per Year</p>
         </div>
-      </div>
-    </div>
-  </section>
 
- <!-- Contact -->
-<div id="contact" class="section-wrapper">
-  <div class="section-card section">
-    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-start; margin-top: 30px;">
-      
-      <!-- Contact Details -->
-      <div style="flex: 1 1 300px;">
-        <p><i class="fas fa-envelope" style="color: #00bcd4; margin-right: 10px;"></i><strong>Email:</strong> VidyaMandirBaberu@gmail.com</p>
-        <p><i class="fas fa-phone" style="color: #4caf50; margin-right: 10px;"></i><strong>Phone:</strong> +91-9415570319, +91-9450016559,     <br>+91-7309166819</p>
-        <p><i class="fas fa-map-marker-alt" style="color: #e91e63; margin-right: 10px;"></i><strong>Location:</strong>
-          Vidya Mandir Inter College, Atarra Road,<br>
-          Baberu, Uttar Pradesh 210121, India
-        </p>
-        <p>
-          <a href="https://www.facebook.com/vidhyamandir.baberu" target="_blank" style="color: #1877f2; text-decoration: none;">
-            <i class="fab fa-facebook-square" style="font-size: 1.5rem; margin-right: 8px;"></i>
-            <strong>Follow us on Facebook</strong>
-          </a>
-        </p>
-      </div>
-
-      <!-- Google Map -->
-      <div style="flex: 1 1 500px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230640.28566762162!2d80.46975591767713!3d25.413028319413854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399caf6eb0a67a05%3A0x79e7987fd3d94f4e!2sVIDYA%20MANDIR%2C%20INTER%20COLLEGE!5e0!3m2!1sen!2sin!4v1752129600528!5m2!1sen!2sin" 
-          width="100%" height="300"
-          style="border: 0; border-radius: 8px;"
-          allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
- 
-  <footer>
-    <div class="footer-content">
-<div class="vmic-credit">
-
-      <p>&copy; 2025 Vidya Mandir Inter College Baberu, Banda, U.P. - 210121, India. All rights reserved.</p>
-</div>
-
-      <div class="developer-credit">
-<span>Website developed by</span>
-        <img src="images/logo/rklogo.png" alt="Developer Logo">
-        <span><strong><a href="https://www.rkmatrix.co.in/" target="_blank" style="color: #ccc;">RKMatrix - Innovative Software Solutions for Modern Businesses</a></strong></span>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-
-   function rotateScienceSlide() {
-      const imagePaths = [
-        "images/scienceExhibition/1.jpeg",
-        "images/scienceExhibition/2.jpeg" ,"images/scienceExhibition/3.jpeg","images/scienceExhibition/4.jpeg"     ];
-
-      let currentIndex = 0;
-      const slideImg = document.getElementById("scienceSlide");
-      let timer;
-
-      function showNext() {
-        currentIndex = (currentIndex + 1) % imagePaths.length;
-        slideImg.src = imagePaths[currentIndex];
-      }
-
-      function start() {
-        timer = setInterval(showNext, 5000);
-      }
-
-      function stop() {
-        clearInterval(timer);
-      }
-
-      slideImg.addEventListener("mouseenter", stop);
-      slideImg.addEventListener("mouseleave", start);
-      slideImg.addEventListener("click", () => {
-        stop();
-        showNext();
-        start();
-      });
-
-      start();
-    }
-
-    function rotateRangoliSlide() {
-      const imagePaths = [
-        "images/rangoli/1.jpeg",
-        "images/rangoli/2.jpeg" ,"images/rangoli/3.jpeg","images/rangoli/4.jpeg","images/rangoli/5.jpeg","images/rangoli/6.jpeg"     ];
-
-      let currentIndex = 0;
-      const slideImg = document.getElementById("rangoliSlide");
-      let timer;
-
-      function showNext() {
-        currentIndex = (currentIndex + 1) % imagePaths.length;
-        slideImg.src = imagePaths[currentIndex];
-      }
-
-      function start() {
-        timer = setInterval(showNext, 5000);
-      }
-
-      function stop() {
-        clearInterval(timer);
-      }
-
-      slideImg.addEventListener("mouseenter", stop);
-      slideImg.addEventListener("mouseleave", start);
-      slideImg.addEventListener("click", () => {
-        stop();
-        showNext();
-        start();
-      });
-
-      start();
-    }
-
- function rotateskillDevelopmentSlide() {
-      const imagePaths = [
-        "images/skillDevelopment/1.jpeg",
-        "images/skillDevelopment/2.jpeg" ,"images/skillDevelopment/3.jpeg","images/skillDevelopment/4.jpeg","images/skillDevelopment/5.jpeg","images/skillDevelopment/6.jpeg"     ];
-
-      let currentIndex = 0;
-      const slideImg = document.getElementById("skillDevelopmentSlide");
-      let timer;
-
-      function showNext() {
-        currentIndex = (currentIndex + 1) % imagePaths.length;
-        slideImg.src = imagePaths[currentIndex];
-      }
-
-      function start() {
-        timer = setInterval(showNext, 5000);
-      }
-
-      function stop() {
-        clearInterval(timer);
-      }
-
-      slideImg.addEventListener("mouseenter", stop);
-      slideImg.addEventListener("mouseleave", start);
-      slideImg.addEventListener("click", () => {
-        stop();
-        showNext();
-        start();
-      });
-
-      start();
-    }
-
-
-
-
-    document.addEventListener("DOMContentLoaded", rotateScienceSlide);
-document.addEventListener("DOMContentLoaded", rotateRangoliSlide);
-document.addEventListener("DOMContentLoaded", rotateskillDevelopmentSlide);
-
-document.addEventListener("DOMContentLoaded", function () {
-  const today = new Date();
-  const startDate = new Date("2025-07-10");
-  const endDate = new Date("2025-07-20");
-
-  if (today >= startDate && today <= endDate) {
-    const marqueeWrapper = document.getElementById("marqueeContainer");
-
-    marqueeWrapper.innerHTML = `
-      <div class="marquee-fixed">
-        <div class="marquee-track">
-          <span>प्रवेश प्रारंभ: एल.के.जी. से 12वीं तक 15 जुलाई तक प्रवेश लेने पर विशेष छूट उपलब्ध।</span>
-          <span>प्रवेश के लिए संपर्क करें: +91-73091 66819</span>
-          <span>जल्दी करें! सीमित सीटें उपलब्ध हैं।</span>
+        <div class="value-card passrate">
+            <i class="fas fa-chart-line icon"></i>
+            <h2>📈 100%</h2>
+            <p>Pass Rate</p>
         </div>
-      </div>
-    `;
-  }
-});
+    </div>
+
+
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <p>At Vidya Mandir Inter College Baberu, we believe education should prepare students for life—not just exams. That’s why we focus on both academic excellence and personal development.</p>
+        <p>Our curriculum encourages learning, teamwork, creativity, and physical fitness. Through our sports programs and creative activities like animation and visual arts, students grow in confidence and imagination.</p>
+        <p>Most importantly, we help each child become a kind, responsible, and capable individual. We are proud to support every student’s journey and future.</p>
+        <div class="highlights">
+            <div class="item">
+                <i class="fas fa-brain"></i>
+                <h4>Critical Thinking</h4>
+                <p>Empowering minds to question, analyze, and innovate—because real growth begins with curiosity.</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-users"></i>
+                <h4>Community</h4>
+                <p>Fostering unity, respect, and collaboration—building a community where every student belongs.</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-seedling"></i>
+                <h4>Character Building</h4>
+                <p>Inspiring discipline, honesty, and leadership—values that shape tomorrow’s changemakers. Because building character isn't just teaching what to do—it's cultivating the courage to do what's right.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class="vision-section">
+        <div class="container">
+            <h2 class="section-title">Vision & Mission</h2>
+            <p class="vision-description">
+                Our vision at Vidya Mandir Inter College is to nurture responsible, informed, and compassionate individuals who will contribute positively to society. We envision a learning environment that empowers students with critical thinking, creativity, and a strong moral compass.
+            </p>
+            <p class="vision-description">
+                Our mission is to provide a holistic education that balances academics, values, physical fitness, and co-curricular activities. We aim to instill in our students a lifelong passion for learning and a deep respect for culture, diversity, and community.
+            </p>
+            <h3 class="section-title-h3">Our Leadership</h3>
+            <div class="vision-cards">
+                <div class="vision-card wow fadeInUp" data-wow-delay="0s">
+                    <img src="images/CornorDesk/Vishweshwar.png" alt="person">
+                    <h4>Mr. Vishweshwar Pandey</h4>
+                    <h3>Founder/Manager</h3>
+                    <p>"हमारा लक्ष्य छात्रों को ज्ञान और करुणा के साथ नेतृत्व करने के लिए सक्षम बनाना है। हम समग्र शिक्षा और सुदृढ़ नैतिक मूल्यों के माध्यम से बाल मस्तिष्क के सर्वांगीण विकास में विश्वास रखते हैं।"</p>
+                </div>
+                <div class="vision-card wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="images/CornorDesk/Saurabh.png" alt="person">
+                    <h4>Er. Saurabh Chandr Pandey</h4>
+                    <h3>Director</h3>
+                    <p>"We are dedicated to creating an environment where students are inspired to think critically, act responsibly, and lead confidently. Quality education is the foundation of a progressive society."</p>
+                </div>
+                <div class="vision-card wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="images/CornorDesk/Principal.png" alt="person">
+                    <h4>Mrs. Anil Dwivedi</h4>
+                    <h3>Principal</h3>
+                    <p>"शिक्षा में उत्कृष्टता समर्पण, मूल्यों और निरंतर प्रयास से प्राप्त होती है। विद्या मंदिर इंटर कॉलेज में हम ऐसे सर्वांगीण व्यक्तित्व का निर्माण करने का प्रयास करते हैं जो भविष्य के लिए पूरी तरह से तैयार हों।"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics">
+        <h2 class="section-title">Academics</h2>
+        <p>Vidya Mandir Inter College offers a well-rounded academic environment where students thrive across grades 6 to 12. Our intermediate programs span Humanities, Science, Commerce, Agriculture, and Vocational Studies—all delivered in Hindi by experienced faculty members dedicated to personalized learning.</p>
+        <p>The college features well-equipped science labs, a modern computer lab, a library with 300+ books, and a playground to support physical education. Students benefit from smart classroom initiatives and regular assessments designed to ensure exam readiness and academic excellence.</p>
+        <p>With over a 75% pass rate and a 100% board exam success in 2021, Vidya Mandir Inter College is a proud platform for students to dream big and rise higher.</p>
+
+    </section>
+
+    <section id="admission" class="admission-section">
+        <div class="container">
+            <h2 class="section-title">Admission</h2>
+            <h4 id="admission-year" class="admission-subtitle"></h4>
+
+            <h5><strong>Eligibility:</strong></h5>
+            <ul>
+                <li>Nursery: 3 years</li>
+                <li>LKG: 4 years</li>
+                <li>UKG: 5 years</li>
+                <li>Class 6: 11 years</li>
+                <li>Class 9: 14 years</li>
+                <li>Class 11: 16 years with minimum 75% in High School</li>
+            </ul>
+
+            <p><strong>Entrance Exam:</strong> Required for Classes 6, 9, and 11. Subjects include Hindi, English, Science, GK, and Math.</p>
+
+            <h5><strong>Documents Required:</strong></h5>
+            <ul>
+                <li>Original Transfer Certificate</li>
+                <li>Marksheet (Especially for Class 11)</li>
+                <li>Age proof and other relevant documents</li>
+            </ul>
+
+            <p><strong>Selection Process:</strong> Based on entrance exam and interview (if required). Final decision rests with the Principal.</p>
+
+            <p><strong>Admission Form:</strong> You can <a href="#" target="_blank">download the form from our website</a></p>
+        </div>
+    </section>
+
+
+
+    <section id="events" class="events-section">
+        <h2 class="section-title">Events</h2>
+        <div class="section-wrapper" id="events">
+            <div class="section-card section">
+                <!--<h2><i class="fas fa-book"></i> Events</h2>-->
+                <!-- Science Exhibition -->
+                <div class="event-block">
+                    <button class="toggle-btn active" onclick="toggleEvent(this)">Science Exhibition  <i class="fas fa-chevron-up icon"></i></button>
+                    <div class="event-content" style="display: block;">
+                        <div class="event-row">
+                            <div class="event-description">
+                                <p>The Science Exhibition helps students become more creative and curious. In this activity, students make models, do experiments, and explain science in fun and interesting ways.</p>
+                                <p>This activity builds confidence, helps students work in a team, and solve real-life problems. Parents can see their child’s creativity during the exhibition.</p>
+                            </div>
+
+                            <div class="event-img">
+                                <img id="scienceSlide" src="images/ScienceExhibition/1.jpeg" alt="Science Exhibition">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rangoli -->
+                <div class="event-block">
+                    <button class="toggle-btn" onclick="toggleEvent(this)">Rangoli Competition  <i class="fas fa-chevron-up icon"></i></button>
+                    <div class="event-content">
+                        <div class="event-row">
+                            <div class="event-description">
+                                <p>The Rangoli Competition encourages students to express their creativity through colors and patterns. In this activity, students create traditional designs using colored powders and natural materials.</p>
+                                <p>This activity promotes cultural awareness, teamwork, and artistic skills. Parents can see their child’s creativity and appreciation for Indian traditions during the event.</p>
+
+                            </div>
+                            <div class="event-img">
+                                <img id="rangoliSlide" src="images/rangoli/1.jpeg" alt="Rangoli">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Skill Development -->
+                <div class="event-block">
+                    <button class="toggle-btn" onclick="toggleEvent(this)">Skill Development  <i class="fas fa-chevron-up icon"></i></button>
+                    <div class="event-content">
+                        <div class="event-row">
+                            <div class="event-description">
+                                <p>Skill Development helps students discover their strengths and build important abilities for their future. Through this program, students learn practical skills that support their career goals and boost their confidence.</p>
+                                <p>It also gives them clarity about their interests and talents, helping them make better decisions for higher studies and career planning.</p>
+
+                            </div>
+                            <div class="event-img">
+                                <img id="skillDevelopmentSlide" src="images/skillDevelopment/1.jpeg" alt="Skill Development">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+
+            <!-- Left: Contact Info -->
+            <div class="contact-left">
+                <p><i class="fas fa-envelope icon email"></i><strong>Email:</strong> vmicbaberu@gmail.com</p>
+                <p>
+                    <i class="fas fa-phone icon phone"></i><strong>Phone:</strong> +91-9415570319, +91-9450016559,
+                    +91-7309166819
+                </p>
+                <p><i class="fas fa-map-marker-alt icon location"></i><strong>Location:</strong> Vidya Mandir Inter College, Atarra Road, Baberu, Uttar Pradesh 210121, India</p>
+                <p>
+                    <a href="https://www.facebook.com/vidhyamandir.baberu" target="_blank" class="fb-link">
+                        <i class="fab fa-facebook-square"></i> <strong>Follow us on Facebook</strong>
+                    </a>
+                </p>
+            </div>
+
+            <!-- Right: Google Map -->
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230640.28566762162!2d80.46975591767713!3d25.413028319413854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399caf6eb0a67a05%3A0x79e7987fd3d94f4e!2sVIDYA%20MANDIR%2C%20INTER%20COLLEGE!5e0!3m2!1sen!2sin!4v1752129600528!5m2!1sen!2sin"
+                        width="100%" height="300" style="border: 0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            © 2025 Vidya Mandir Inter College, Baberu. All Rights Reserved.
+        </div>
+        <div class="footer-right">
+            Website developed by
+            <span class="highlight">RKMatrix–Software Solutions</span>
+            (<a href="https://www.rkmatrix.co.in" target="_blank">www.rkmatrix.co.in</a>)
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917309166819" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.animate').forEach(el => {
+                const position = el.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+                if (position < screenHeight - 100) {
+                    el.classList.add('show');
+                }
+            });
+        });
+
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+
+            // Ensure light styling only when menu is toggled open
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.add('light-mode');
+            }
+        }
+
+        // Apply light style on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.add('light-mode');
+        });
+
+        // Close menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        window.addEventListener('click', (e) => {
+            const nav = document.querySelector('.nav-links');
+            const toggle = document.querySelector('.menu-toggle');
+            if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('active');
+            }
+        });
+
+        // Apply light mode when scrolling
+        window.addEventListener('scroll', () => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.add('light-mode');
+        });
 
 
 
 
-    // Toggle menu for mobile
-    function toggleMenu() {
-      const menu = document.getElementById('navMenu');
-      menu.classList.toggle('show');
-    }
 
-  function toggleEvent(clickedBtn) {
-    // Close all event contents
-    const allButtons = document.querySelectorAll('.toggle-btn');
-    const allContents = document.querySelectorAll('.event-content');
+        // Admission year
+        function getFinancialYearText() {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = today.getMonth() + 1;
+            const fyStart = month >= 4 ? year : year - 1;
+            const fyEnd = fyStart + 1;
+            return `Admission Open for Financial Year ${fyStart}-${fyEnd.toString().slice(-2)}`;
+        }
 
-    allButtons.forEach(btn => btn.classList.remove('active'));
-    allContents.forEach(content => content.style.display = 'none');
+        const admissionYearEl = document.getElementById("admission-year");
+        if (admissionYearEl) {
+            admissionYearEl.innerText = getFinancialYearText();
+        }
 
-    // Activate the one clicked
-    clickedBtn.classList.add('active');
-    const content = clickedBtn.nextElementSibling;
-    content.style.display = 'block';
-  }
 
-    // Slider logic (unchanged)
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const slideContainer = document.getElementById('slideContainer');
-    const dots = document.querySelectorAll('.dot');
-    const totalSlides = slides.length;
+        // Toggle content visibility
 
-    function updateSlider() {
-      slideContainer.style.transform = `translateX(-${slideIndex * (100 / totalSlides)}%)`;
-      dots.forEach(dot => dot.classList.remove('active'));
-      if (dots[slideIndex]) dots[slideIndex].classList.add('active');
-    }
+        // Navigation elements
+        // Select necessary elements
+        const navLinks = document.querySelectorAll(".nav-links a");
+        const nav = document.querySelector(".nav-links");
+        const toggleBtn = document.querySelector(".menu-toggle");
 
-    function plusSlides(n) {
-      slideIndex = (slideIndex + n + totalSlides) % totalSlides;
-      updateSlider();
-    }
+        // Toggle menu and ensure light styling
+        function toggleMenu() {
+            nav.classList.toggle("active");
+            if (nav.classList.contains("active")) {
+                nav.classList.add("light-mode");
+            }
+        }
 
-    function currentSlide(n) {
-      slideIndex = n - 1;
-      updateSlider();
-    }
+        // Highlight active link based on scroll
+        function updateActiveLink() {
+            const scrollPos = window.scrollY + 120;
+            navLinks.forEach(link => {
+                const section = document.querySelector(link.getAttribute("href"));
+                if (section &&
+                    section.offsetTop <= scrollPos &&
+                    section.offsetTop + section.offsetHeight > scrollPos) {
+                    navLinks.forEach(l => l.classList.remove("active-link"));
+                    link.classList.add("active-link");
+                }
+            });
+        }
 
-    slideContainer.style.width = `${totalSlides * 100}%`;
-    slides.forEach(slide => {
-      slide.style.width = `${100 / totalSlides}%`;
-    });
+        // Close nav when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+            });
+        });
 
-    updateSlider();
+        // Close nav when clicking outside
+        window.addEventListener("click", e => {
+            if (!nav.contains(e.target) && !toggleBtn.contains(e.target)) {
+                nav.classList.remove("active");
+            }
+        });
 
-    // Navbar link highlight
-    const navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', function () {
-        navLinks.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
+        // Apply light mode and active link on load/scroll
+        window.addEventListener("load", () => {
+            nav.classList.add("light-mode");
+            updateActiveLink();
+        });
 
-    // Admission year
-    function getFinancialYearText() {
-      const today = new Date();
-      const year = today.getFullYear();
-      const month = today.getMonth() + 1;
-      const fyStart = month >= 4 ? year : year - 1;
-      const fyEnd = fyStart + 1;
-      return `Admission Open for Financial Year ${fyStart}-${fyEnd.toString().slice(-2)}`;
-    }
+        window.addEventListener("scroll", () => {
+            nav.classList.add("light-mode");
+            updateActiveLink();
+        });
 
-    const admissionYearEl = document.getElementById("admission-year");
-    if (admissionYearEl) {
-      admissionYearEl.innerText = getFinancialYearText();
-    }
-  </script>
+        // Image data
+        const imageSlides = {
+            scienceSlide: [
+                "images/ScienceExhibition/1.jpeg",
+                "images/ScienceExhibition/2.jpeg",
+                "images/ScienceExhibition/3.jpeg"
+            ],
+            rangoliSlide: [
+                "images/rangoli/1.jpeg",
+                "images/rangoli/2.jpeg",
+                "images/rangoli/3.jpeg"
+            ],
+            skillDevelopmentSlide: [
+                "images/skillDevelopment/1.jpeg",
+                "images/skillDevelopment/2.jpeg",
+                "images/skillDevelopment/3.jpeg"
+            ]
+        };
+
+        const currentIndices = {};
+        const intervals = {};
+
+        function updateSlide(id) {
+            const images = imageSlides[id];
+            const index = currentIndices[id] = (currentIndices[id] + 1) % images.length;
+            document.getElementById(id).src = images[index];
+        }
+
+        function startAutoSlide(id) {
+            currentIndices[id] = 0;
+            intervals[id] = setInterval(() => updateSlide(id), 3000);
+            const img = document.getElementById(id);
+            img.addEventListener("mouseenter", () => clearInterval(intervals[id]));
+            img.addEventListener("mouseleave", () => startAutoSlide(id));
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            Object.keys(imageSlides).forEach(id => {
+                startAutoSlide(id);
+            });
+        });
+
+
+    </script>
 </body>
 </html>
