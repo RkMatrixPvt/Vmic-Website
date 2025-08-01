@@ -418,9 +418,9 @@
         // Image data
         const imageSlides = {
             scienceSlide: [
-                "images/ScienceExhibition/1.jpeg",
-                "images/ScienceExhibition/2.jpeg",
-                "images/ScienceExhibition/3.jpeg"
+                "images/scienceExhibition/1.jpeg",
+                "images/scienceExhibition/2.jpeg",
+                "images/scienceExhibition/3.jpeg"
             ],
             rangoliSlide: [
                 "images/rangoli/1.jpeg",
@@ -456,6 +456,29 @@
                 startAutoSlide(id);
             });
         });
+
+        function toggleEvent(button) {
+            const eventContent = button.nextElementSibling;
+            const icon = button.querySelector(".icon");
+
+            // Toggle visibility of current event
+            const isActive = button.classList.contains("active");
+            document.querySelectorAll(".toggle-btn").forEach(btn => {
+                btn.classList.remove("active");
+                btn.querySelector(".icon").classList.remove("fa-chevron-down");
+                btn.querySelector(".icon").classList.add("fa-chevron-up");
+                btn.nextElementSibling.style.display = "none";
+            });
+
+            if (!isActive) {
+                button.classList.add("active");
+                icon.classList.remove("fa-chevron-up");
+                icon.classList.add("fa-chevron-down");
+                eventContent.style.display = "block";
+            }
+        }
+
+
 
 
     </script>
