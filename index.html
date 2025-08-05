@@ -38,11 +38,11 @@
         </div>
         <nav class="nav-links light-mode">
             <a href="#home" class="active-link">Home</a>
+            <a href="#events">Events</a>
             <a href="#about">About</a>
             <a href="#vision" title="Vision & Mission">Purpose</a>
             <a href="#academics">Academics</a>
             <a href="#admission">Admission</a>
-            <a href="#events">Events</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -81,6 +81,86 @@
         </div>
     </div>
 
+
+    <section id="events" class="events-section">
+        <div class="section-header-wrapper">
+            <h2 class="section-title">Events</h2>
+            <button class="gallery-button" onclick="openGalleryModal()">
+                <i class="fas fa-images"></i> Gallery
+            </button>
+        </div>
+        <div class="section-wrapper" id="events">
+            <div class="section-card section">
+                <!--<h2><i class="fas fa-book"></i> Events</h2>-->
+                <!-- Science Exhibition -->
+                <div class="event-block">
+                    <button class="toggle-btn active" onclick="toggleEvent(this)">Science Exhibition  <i class="fas fa-chevron-up icon"></i></button>
+                    <div class="event-content" style="display: block;">
+                        <div class="event-row">
+                            <div class="event-description">
+                                <p>The Science Exhibition helps students become more creative and curious. In this activity, students make models, do experiments, and explain science in fun and interesting ways.</p>
+                                <p>This activity builds confidence, helps students work in a team, and solve real-life problems. Parents can see their child’s creativity during the exhibition.</p>
+                            </div>
+
+                            <div class="event-img">
+                                <img id="scienceSlide" src="images/ScienceExhibition/1.jpeg" alt="Science Exhibition">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rangoli -->
+                <div class="event-block">
+                    <button class="toggle-btn" onclick="toggleEvent(this)">Rangoli Competition  <i class="fas fa-chevron-up icon"></i></button>
+                    <div class="event-content">
+                        <div class="event-row">
+                            <div class="event-description">
+                                <p>The Rangoli Competition encourages students to express their creativity through colors and patterns. In this activity, students create traditional designs using colored powders and natural materials.</p>
+                                <p>This activity promotes cultural awareness, teamwork, and artistic skills. Parents can see their child’s creativity and appreciation for Indian traditions during the event.</p>
+
+                            </div>
+                            <div class="event-img">
+                                <img id="rangoliSlide" src="images/rangoli/1.jpeg" alt="Rangoli">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Skill Development -->
+                <div class="event-block">
+                    <button class="toggle-btn" onclick="toggleEvent(this)">Skill Development  <i class="fas fa-chevron-up icon"></i></button>
+                    <div class="event-content">
+                        <div class="event-row">
+                            <div class="event-description">
+                                <p>Skill Development helps students discover their strengths and build important abilities for their future. Through this program, students learn practical skills that support their career goals and boost their confidence.</p>
+                                <p>It also gives them clarity about their interests and talents, helping them make better decisions for higher studies and career planning.</p>
+
+                            </div>
+                            <div class="event-img">
+                                <img id="skillDevelopmentSlide" src="images/skillDevelopment/1.jpeg" alt="Skill Development">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <div id="galleryModal" class="gallery-modal">
+        <div class="gallery-content">
+            <span class="close" onclick="closeGalleryModal()">&times;</span>
+
+            <div class="gallery-main">
+                <img id="mainGalleryImage" src="images/gallery/1.jpg" alt="Large View">
+            </div>
+
+            <div class="gallery-thumbnails" id="galleryThumbs"></div>
+        </div>
+    </div>
 
     <section id="about">
         <h2 class="section-title">About Us</h2>
@@ -179,68 +259,6 @@
 
 
 
-    <section id="events" class="events-section">
-        <h2 class="section-title">Events</h2>
-        <div class="section-wrapper" id="events">
-            <div class="section-card section">
-                <!--<h2><i class="fas fa-book"></i> Events</h2>-->
-                <!-- Science Exhibition -->
-                <div class="event-block">
-                    <button class="toggle-btn active" onclick="toggleEvent(this)">Science Exhibition  <i class="fas fa-chevron-up icon"></i></button>
-                    <div class="event-content" style="display: block;">
-                        <div class="event-row">
-                            <div class="event-description">
-                                <p>The Science Exhibition helps students become more creative and curious. In this activity, students make models, do experiments, and explain science in fun and interesting ways.</p>
-                                <p>This activity builds confidence, helps students work in a team, and solve real-life problems. Parents can see their child’s creativity during the exhibition.</p>
-                            </div>
-
-                            <div class="event-img">
-                                <img id="scienceSlide" src="images/ScienceExhibition/1.jpeg" alt="Science Exhibition">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Rangoli -->
-                <div class="event-block">
-                    <button class="toggle-btn" onclick="toggleEvent(this)">Rangoli Competition  <i class="fas fa-chevron-up icon"></i></button>
-                    <div class="event-content">
-                        <div class="event-row">
-                            <div class="event-description">
-                                <p>The Rangoli Competition encourages students to express their creativity through colors and patterns. In this activity, students create traditional designs using colored powders and natural materials.</p>
-                                <p>This activity promotes cultural awareness, teamwork, and artistic skills. Parents can see their child’s creativity and appreciation for Indian traditions during the event.</p>
-
-                            </div>
-                            <div class="event-img">
-                                <img id="rangoliSlide" src="images/rangoli/1.jpeg" alt="Rangoli">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Skill Development -->
-                <div class="event-block">
-                    <button class="toggle-btn" onclick="toggleEvent(this)">Skill Development  <i class="fas fa-chevron-up icon"></i></button>
-                    <div class="event-content">
-                        <div class="event-row">
-                            <div class="event-description">
-                                <p>Skill Development helps students discover their strengths and build important abilities for their future. Through this program, students learn practical skills that support their career goals and boost their confidence.</p>
-                                <p>It also gives them clarity about their interests and talents, helping them make better decisions for higher studies and career planning.</p>
-
-                            </div>
-                            <div class="event-img">
-                                <img id="skillDevelopmentSlide" src="images/skillDevelopment/1.jpeg" alt="Skill Development">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
 
 
     <section id="contact" class="contact-section">
@@ -418,7 +436,6 @@
         // Image data
         const imageSlides = {
             scienceSlide: [
-                "images/scienceExhibition/1.jpeg",
                 "images/scienceExhibition/2.jpeg",
                 "images/scienceExhibition/3.jpeg"
             ],
@@ -478,8 +495,50 @@
             }
         }
 
+        const imageCount = 18;
+        const imagePath = 'images/gallery/';
+        const imageExtension = 'jpg';
 
+        const thumbsContainer = document.getElementById('galleryThumbs');
+        const mainImage = document.getElementById('mainGalleryImage');
 
+        // Dynamically load thumbnails
+        for (let i = 1; i <= imageCount; i++) {
+            const img = document.createElement('img');
+            img.src = `${imagePath}${i}.${imageExtension}`;
+            img.alt = `Image ${i}`;
+
+            img.onclick = function () {
+                // Trigger flip animation
+                mainImage.classList.add("main-image-flip");
+
+                // Change the image after a short delay for realism
+                setTimeout(() => {
+                    mainImage.src = this.src;
+                    mainImage.alt = this.alt;
+                }, 150); // image switch halfway through flip
+
+                // Remove animation class after it's done
+                mainImage.addEventListener("animationend", function removeAnim() {
+                    mainImage.classList.remove("main-image-flip");
+                    mainImage.removeEventListener("animationend", removeAnim);
+                });
+            };
+
+            thumbsContainer.appendChild(img);
+        }
+
+        // Set the initial main image
+        mainImage.src = `${imagePath}1.${imageExtension}`;
+        mainImage.alt = `Image 1`;
+
+        function openGalleryModal() {
+            document.getElementById("galleryModal").style.display = "block";
+        }
+
+        function closeGalleryModal() {
+            document.getElementById("galleryModal").style.display = "none";
+        }
 
     </script>
 </body>

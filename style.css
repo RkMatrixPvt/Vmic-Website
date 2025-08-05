@@ -854,6 +854,12 @@ section#contact {
     margin: 40px auto;
 }
 
+.section-header-wrapper {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .section-title {
     text-align: center;
     font-size: 32px;
@@ -1074,4 +1080,226 @@ section#contact {
         .nav-links a {
             padding: 0.5rem;
         }
+}
+/* 🔴 GALLERY BUTTON */
+.gallery-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d50000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    animation: pulseGlow 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 0px rgba(213, 0, 0, 0.6);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 12px rgba(213, 0, 0, 0.9);
+        transform: scale(1.05);
+    }
+
+    100% {
+        box-shadow: 0 0 0px rgba(213, 0, 0, 0.6);
+        transform: scale(1);
+    }
+}
+
+.gallery-button:hover {
+    background-color: #ea6a19;
+}
+
+/* 🔳 MODAL OVERLAY */
+.gallery-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 100px 40px;
+    box-sizing: border-box;
+    animation: fadeIn 0.4s ease;
+}
+
+/* 🔲 MODAL CONTENT BOX */
+.gallery-content {
+    background: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: slideUp 0.5s ease;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* ❌ CLOSE BUTTON */
+.gallery-modal .close {
+    position: absolute;
+    top: 0px;
+    right: 9px;
+    font-size: 28px;
+    color: #d50000;
+    cursor: pointer;
+}
+
+/* 🖼️ MAIN IMAGE PANEL */
+.gallery-main {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+}
+
+    .gallery-main img {
+        max-width: 100%;
+        width: 100%;
+        max-height: 400px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+        .gallery-main img:hover {
+            transform: scale(1.03);
+        }
+
+/* 🖼️ THUMBNAIL LIST */
+.gallery-thumbnails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+    .gallery-thumbnails img {
+        width: 100%;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+    }
+
+        .gallery-thumbnails img:hover {
+            opacity: 0.7;
+        }
+
+/* 📱 RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+    .gallery-modal {
+        padding: 20px 10px;
+    }
+
+    .gallery-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .gallery-main {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+        .gallery-main img {
+            max-height: 250px;
+        }
+
+    .gallery-thumbnails {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-y: hidden;
+        max-height: none;
+        width: 100%;
+        gap: 10px;
+    }
+
+        .gallery-thumbnails img {
+            width: 60px;
+            height: auto;
+        }
+
+    .gallery-modal .close {
+        font-size: 24px;
+    }
+}
+
+/* Optional responsiveness for tablets */
+@media screen and (max-width: 1200px) {
+    .section-header-wrapper {
+        text-align: center;
+    }
+
+    .gallery-button {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
+
+/* ✨ ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes flipImage {
+    0% {
+        transform: perspective(800px) rotateY(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: perspective(800px) rotateY(90deg);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: perspective(800px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.main-image-flip {
+    animation: flipImage 0.6s ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
